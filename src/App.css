@@ -1,0 +1,349 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.App {
+  text-align: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 10px; 
+  background-color: white; 
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 5px 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px; 
+  border-radius: 25%; 
+  margin-bottom: 5px; 
+}
+
+.username {
+  color: red; 
+  font-weight: bold; 
+}
+
+.exit-button {
+  background-color: transparent; 
+  border: none;
+  cursor: pointer;
+  color: red;
+  font-weight: bold; 
+}
+
+.exit-button:hover {
+  text-decoration: underline; 
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: 20px; 
+}
+
+.about-us-button {
+  margin-left: -180px;
+  text-align: center;
+}
+
+.about-us-btn {
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: rgb(255, 70, 70);
+  background-color: #ffffff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about-us-btn:hover {
+  background-color: #e7e7e7; 
+}
+
+h1 {
+  color: #d52b1e;  
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+
+
+.car-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.car-item {
+  background: #fff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 350px; 
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s; 
+  overflow: hidden; 
+}
+
+.car-item:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); 
+}
+
+.car-item h2 {
+  font-size: 1.6em;
+  color: #d52b1e;
+  margin: 0 0 10px; /* Убирает отступы сверху и снизу */
+}
+
+.car-item .price {
+  font-size: 1.4em; /* Размер шрифта для цены */
+  color: #e74c3c; /* Красный цвет для выделения цены */
+  margin: 10px 0; /* Отступы для цены */
+  font-weight: bold; /* Жирный шрифт для выделения цены */
+}
+
+.car-item p {
+  font-size: 1.2em;
+  color: #7f8c8d; /* Серый цвет для текста */
+  margin: 0 0 10px; /* Добавляем отступ снизу для текста */
+}
+
+.car-item .mileage {
+  font-size: 1em; /* Размер шрифта для пробега */
+  color: #95a5a6; /* Светло-серый цвет для пробега */
+  margin: 10px 0; /* Отступы для пробега */
+}
+
+.car-item button {
+  display: flex; /* Используем flexbox */
+  align-items: center; /* Центрируем содержимое по вертикали */
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  background-color: #d52b1e; /* Красный цвет кнопки */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px; /* Увеличиваем отступы для кнопки */
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s; /* Плавный переход цвета кнопки */
+  margin-top: 15px; /* Увеличиваем отступ сверху для кнопки */
+  width: 100%; /* Кнопка занимает всю ширину ячейки */
+  height: 50px; /* Установите фиксированную высоту для всех кнопок */
+}
+
+.car-item button:hover {
+  background-color: #a41e1e; /* Более темный красный при наведении */
+}
+
+/* Стили для изображений автомобилей */
+.car-item img {
+  border-radius: 10px;
+  max-height: 200px; /* Ограничиваем высоту изображений */
+  width: 100%; /* Ширина изображения 100% */
+  object-fit: cover; /* Обеспечивает правильное соотношение сторон */
+  margin-bottom: 10px; /* Отступ снизу для изображения */
+}
+
+
+/* Обсуждение контента */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  font-weight: bold;
+  background-color: #d52b1e; /* Красный фон */
+  color: white; /* Цвет текста */
+  font-size: 2em; /* Размер шрифта */
+  padding: 10px; /* Отступы */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.marquee span {
+  display: inline-block;
+  animation: marquee 8s linear infinite; /* Анимация */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Начальная позиция */
+  }
+  100% {
+    transform: translateX(-100%); /* Конечная позиция */
+  }
+}
+
+.slick-prev, .slick-next {
+  font-size: 18px; 
+  color: white; 
+  background-color: rgba(221, 0, 0, 0.9); 
+  border: none; 
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; 
+  position: absolute; 
+  bottom: 10px; 
+  transform: translateY(0); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.slick-prev {
+  left: 10px; 
+}
+
+.slick-next {
+  right: 10px; 
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: rgba(41, 128, 185, 1); 
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
+}
+
+.slider-container {
+  position: relative; 
+  padding-bottom: 50px; 
+}
+
+
+
+.maple-leaf {
+  width: 50px;
+  height: auto; 
+  margin-left: 5px; 
+  margin-bottom: 20px;
+  filter: drop-shadow(5px  6px rgb(221, 221, 221))
+}
+
+.ads{
+  color: #a41e1e;
+  font-size: 40px;
+
+}
+
+.adsection{
+  margin-bottom: -30px;
+  margin-top: 50px;
+  height: 40px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 2px 10px rgb(182, 182, 182);
+}
+
+
+video{
+  width: 500px;
+  box-shadow: 1px 2px 10px black;
+  margin-top: -30px;
+  border-radius: 2%;
+  border: 5px solid #ff0000;
+}
+
+
+h5{
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #ff0000; 
+  color: #fff; 
+  padding: 10px 0; 
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%; 
+  animation: marquee 10s linear infinite; 
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0); 
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+
+footer {
+  background-color: #f9f9f9;
+  background-repeat: no-repeat; 
+  background-position: center;
+  padding: 20px;
+  text-align: center; 
+  margin-top: -40px;
+  color: #a41e1e;
+}
+
+a{
+  color: #a41e1e;
+}
+
+footer i {
+  font-size: 50px; 
+  margin-right: 20px;
+  margin-left: 20px; 
+  vertical-align: middle; 
+}
+
+footer i:hover{
+  color: #d52b1e;
+}
+
+.map-iframe {
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  height: 350px; 
+}
+
+@media (max-width: 768px) {
+  
+  video{
+    width: 300px;
+    margin-top: -10px;
+    border-radius: 2%;
+    border: 5px solid #ff0000;
+  }
+  
+  h5{
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+}

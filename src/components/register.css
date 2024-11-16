@@ -1,0 +1,35 @@
+/* register.css */
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Занимаем всю высоту экрана */
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-input {
+    margin-bottom: 10px; /* Отступ между полями ввода */
+    padding: 10px;
+    width: 250px; /* Ширина поля ввода */
+  }
+  
+  .register-button {
+    font-weight: bold;
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    background-color: #ff8080; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+  }
+  
+  .register-button:hover {
+    background-color: #ff3a3a; /* Цвет фона при наведении */
+  }
+  

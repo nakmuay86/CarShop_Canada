@@ -1,0 +1,12 @@
+.car-filter {
+    margin: 10px auto 20px; /* Установите верхний отступ меньше, чтобы поднять элемент */
+    display: flex; /* Используем flexbox для выравнивания */
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+  }
+  
+  .car-filter input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+  }
+  

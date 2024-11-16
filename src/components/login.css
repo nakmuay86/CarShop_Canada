@@ -1,0 +1,92 @@
+/* src/components/Login.css */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем содержимое по горизонтали */
+  justify-content: center; /* Центрируем содержимое по вертикали */
+  height: 100vh; /* Занимаем всю высоту экрана */
+}
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Ширина формы */
+  }
+  
+  .login-input {
+    padding: 10px;
+    margin-bottom: 10px; /* Отступ между полями */
+    border: 1px solid #ccc; /* Цвет рамки */
+    border-radius: 5px; /* Закругленные углы */
+    font-size: 16px; /* Размер шрифта */
+  }
+  
+  .login-button {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #ff0000; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Закругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+  }
+  
+  .login-button:hover {
+    background-color: #803030; /* Цвет кнопки при наведении */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали */
+    margin-bottom: 20px; /* Отступ снизу */
+  }
+
+  .error-message{
+    font-weight: bold;
+    color: red;
+  }
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Cursor */
+.cursor{
+    color: #c20404;
+    text-shadow: black;
+    font-weight: bold;
+    position: relative;
+    width: 24em;
+    margin-bottom: 0px;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+@media (max-width: 768px) {
+
+.cursor{
+  font-size: 17px;
+}
+
+
+}

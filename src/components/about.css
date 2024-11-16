@@ -1,0 +1,61 @@
+.about-us {
+    background-color: #f4f4f4; /* Светлый фон для секции */
+    padding: 40px; /* Внутренние отступы */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+    margin: 20px 0; /* Отступы сверху и снизу */
+    max-width: 800px; /* Максимальная ширина секции */
+    margin-left: auto; /* Центрирование секции */
+    margin-right: auto; /* Центрирование секции */
+}
+
+.about-us h2 {
+    font-weight: bold;
+    font-size: 2.5em; /* Размер заголовка */
+    color: #ff1b1b; /* Цвет текста заголовка */
+    margin-bottom: 20px; /* Отступ снизу заголовка */
+    text-align: center; /* Центрирование заголовка */
+}
+
+.about-us p {
+    font-weight: bold;
+    font-size: 1.1em; /* Размер текста */
+    line-height: 1.6; /* Межстрочный интервал */
+    color: #555; /* Цвет текста */
+    margin-bottom: 15px; /* Отступ снизу абзаца */
+    text-align: justify; /* Выравнивание текста по ширине */
+}
+
+footer{
+    margin-top: 20px;
+    border-radius: 3%;
+}
+
+footer i {
+    font-size: 50px; /* Увеличьте размер иконок */
+    margin-right: 20px;
+    margin-left: 15px; /* Отступ справа от иконок */
+    vertical-align: middle; /* Выравнивание по центру */
+  }
+  
+  /* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .about-us {
+        padding: 20px; /* Уменьшение внутренних отступов */
+        margin: 10px; /* Уменьшение отступов сверху и снизу */
+    }
+
+    .about-us h2 {
+        font-size: 2em; /* Уменьшение размера заголовка */
+    }
+
+    .about-us p {
+        font-size: 1em; /* Уменьшение размера текста */
+    }
+
+    footer i {
+        font-size: 50px; /* Уменьшение размера иконок */
+        margin-right: 10px; /* Уменьшение отступа справа от иконок */
+        margin-left: 10px; /* Уменьшение отступа слева от иконок */
+    }
+}

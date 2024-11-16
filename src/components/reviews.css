@@ -1,0 +1,106 @@
+.reviews-section {
+  align-items: center;
+  background-color: #fff; /* Белый фон */
+  border: 2px solid #ff0000; /* Красная рамка */
+  border-radius: 8px;
+  padding: 30px; /* Увеличьте отступы для более комфортного восприятия */
+  margin: 100px auto; /* Центрирование блока с помощью auto */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+  max-width: 600px; /* Установите максимальную ширину для среднего размера */
+  overflow: hidden; /* Скрыть переполнение */
+  display: flex; /* Используйте Flexbox для выравнивания */
+  flex-direction: column; /* Вертикальное направление */
+  align-items: center; /* Центрирование содержимого по горизонтали */
+}
+
+.reviews-list {
+  align-items: center;
+  margin-top: 10px; /* Уменьшите отступ сверху */
+  width: 100%; /* Занять всю ширину родителя */
+}
+
+.review {
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px; /* Увеличьте отступы внутри отзыва */
+  margin-bottom: 15px; /* Увеличьте отступ между отзывами */
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Светлый фон для отзывов */
+  display: flex; /* Используйте Flexbox для отзывов */
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+  opacity: 0; /* Начальная непрозрачность для анимации */
+  transform: translateY(20px); /* Начальное смещение для анимации */
+  animation: fadeIn 0.5s forwards; /* Анимация появления */
+}
+
+.review-photo {
+  width: 100px; /* Увеличьте размер фотографии */
+  height: 100px; /* Увеличьте размер фотографии */
+  border: 3px solid #ff0000; /* Красная рамка */
+  border-radius: 10%; /* Сделайте фото круглым */
+  margin-right: 15px; /* Увеличьте отступ справа от фотографии */
+}
+
+.review-content {
+  display: flex; /* Используйте Flexbox для содержимого отзыва */
+  flex-direction: column; /* Вертикальное направление */
+  justify-content: flex-start; /* Выравнивание по верхнему краю */
+}
+
+.ground {
+  font-weight: bold;
+  color: red;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+      border-color: transparent;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.review:hover {
+  transform: scale(1.02); /* Увеличение при наведении */
+  transition: transform 0.3s; /* Плавный переход */
+}
+
+.review h3 {
+  font-weight: bold;
+  color: #ff0000;
+  font-size: 1.2em; 
+  margin: -3px;
+  overflow: hidden;
+  white-space: nowrap; 
+  border-right: 2px solid #ff0000;
+  width: 100%;
+  animation: typing 4s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+.review p {
+  font-weight: normal; 
+  color: #333;
+  font-size: 1em; 
+  margin-top: 10px;
+}
+
+.review-text {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #555;
+  font-size: 0.9em; 
+}
